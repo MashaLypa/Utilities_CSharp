@@ -13,3 +13,8 @@ D:\Git\Utilities\MyUtilities\MyUtilities\obj\x86\Debug\MyUtilities.Properties.Re
 D:\Git\Utilities\MyUtilities\MyUtilities\obj\x86\Debug\MyUtilities.csproj.GenerateResource.Cache
 D:\Git\Utilities\Utilities_CSharp.git\MyUtilities\obj\x86\Debug\MyUtilities.exe
 D:\Git\Utilities\Utilities_CSharp.git\MyUtilities\obj\x86\Debug\MyUtilities.pdb
+D:\Git\Utilities\Utilities_CSharp.git\MyUtilities\bin\Debug\MyUtilities.exe
+D:\Git\Utilities\Utilities_CSharp.git\MyUtilities\bin\Debug\MyUtilities.pdb
+D:\Git\Utilities\Utilities_CSharp.git\MyUtilities\obj\x86\Debug\MyUtilities.MyForm.resources
+D:\Git\Utilities\Utilities_CSharp.git\MyUtilities\obj\x86\Debug\MyUtilities.Properties.Resources.resources
+D:\Git\Utilities\Utilities_CSharp.git\MyUtilities\obj\x86\Debug\MyUtilities.csproj.GenerateResource.Cache
