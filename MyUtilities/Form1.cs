@@ -20,5 +20,10 @@ namespace MyUtilities
         {
             this.Close();
         }
+
+        private void tsmiAbout_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Программа: Мои утилиты, \nсодержит ряд небольших программ, \nкоторые могут пригодиться в жизни. \nА главное, научить меня основам \nпрограммирования на C#. \nАвтор: Мария Липа.", "О программе");
+        }
     }
 }
