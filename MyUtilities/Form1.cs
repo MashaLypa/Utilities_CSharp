@@ -13,6 +13,7 @@ namespace MyUtilities
     {
         int count = 0;
         Random rnd;
+        char[] spec_chars = new char[] {'%', '*', ')', '?', '#', '$', '~'};
 
         public MyForm()
         {
@@ -124,6 +125,36 @@ namespace MyUtilities
         private void MyForm_Load(object sender, EventArgs e)
         {
             LoadNotepad();
+            clbPassword.SetItemChecked(0, true);
+            clbPassword.SetItemChecked(1, true);
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            if (clbPassword.CheckedItems.Count == 0)
+                return;
+            string password = "";
+
+            for (int i = 0; i < nudPasslength.Value; i++)
+            {
+                int n = rnd.Next(0, clbPassword.CheckedItems.Count);
+                string s = clbPassword.CheckedItems[n].ToString();
+
+                switch (s)
+                {
+                    case "Цифры": password += rnd.Next(10).ToString();
+                        break;
+                    case "Прописные буквы": password += Convert.ToChar(rnd.Next(65, 91));                        
+                        break;
+                    case "Строчные буквы": password += Convert.ToChar(rnd.Next(97, 123)); 
+                        break;
+                    default:
+                        password += spec_chars[rnd.Next(spec_chars.Length)];
+                        break;
+                }
+                tbPassword.Text = password;
+                Clipboard.SetText(password);
+            }
         }
     }
 }
